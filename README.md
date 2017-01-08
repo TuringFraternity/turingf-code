@@ -9,6 +9,8 @@ Website: http://turingf.org/
 
 Although this repository is intended for members of the Turing Fraternity, we welcome all contributors to help improve the code.
 
+Fork the repository, commit changes and send a pull request to make changes. Happy Contributing :)
+
 ## Tutorials
 
 ### Command Line Tutorials
