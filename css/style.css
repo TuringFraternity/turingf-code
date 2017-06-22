@@ -1,0 +1,31 @@
+body {
+  background-color: #1C6ED0 ; 
+  color: #FFF;
+
+}
+/*Navbar Header*/
+#header-nav{
+  background-color: #F1F4F9 ;
+  opacity: 1 ;
+  box-sizing: border-box;
+  border-radius: 0;
+  height: 100px;
+
+}
+/*
+#logo-img{
+  background-image: url('../images/logo-img.jpeg') no-repeat ;
+  width: 150px ;
+  height: 150px ;
+}
+
+*/
+.navbar-header > a > img {
+	width: 180px;
+	height: 180px;
+}
+
+.navbar-brand > a > h1{
+	font-size: 2.25em;
+}
+
