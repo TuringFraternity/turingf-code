@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- FontAwesome linked -->
 	<link rel="stylesheet" type="text/css" href="">
-
+	<!--Font link for Acme Font-->
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 	<!-- Make sure CSS file is linked after the above CDNs to allow overriding -->
 </head>
 <body>
@@ -19,13 +20,28 @@
 	<nav id="header-nav" class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
-				<a href="index.html" class="pull-left">
-					<img src="images/logo-img.PNG">
+				<a href="index.html" class="pull-left visible-md visible-lg">
+					<img src="images/logo-img1.PNG">
 					<!-- <div id="logo-img" alt = "Logo Image"></div> -->
 				</a>
+				<div class="navbar-brand">
+					<a href="index.html"><h1>The Turing Fraternity</h1></a>
+				</div>
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-			<div class="navbar-brand">
-				<a href="index.html"><h1>The Turing Fraternity</h1></a>
+			<div id="collapse-navbar"  class="collapse navbar-collapse">
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">GOC</a></li>
+					<li><a href="#">Volunteer</a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -36,8 +52,10 @@
 
 <!-- Script after body to decrease loading time -->
 <!-- jQuery linked -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Bootstrap JS linked -->
 <script src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap JS linked -->
+<script src="js/bootstrap.min.js"></script>
+
+
 
 </html>
