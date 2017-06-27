@@ -66,8 +66,8 @@ header {
 #home {
   background-image:url('../images/back-img-4.jpg');
   background-position: center;
-  width: 1350px;
-  height: 648px;
+  width: 100%;
+  height: 664px;
   margin-top: 0px;
   padding-top: 0px;
   filter: blur();
@@ -90,8 +90,8 @@ header {
 
 #about {
   background-image:url('../images/back-img-2.jpg');
-  width: 1400px;
-  height: 650px;
+  width: 100%;
+  height: 664px;
   margin-top: 0px;
   padding-top: 0px;
 }
