@@ -2,19 +2,63 @@ body {
   color: #000;
   background-color: #444546;
 }
+
+h2.page-heading {
+  margin-bottom: 12px;
+  margin-top: 120px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Spectral', serif;
+  font-size: 40px
+}
+
+
+
+.fill {
+  width: 100%;
+  height: 120px;
+  background-color: #2da1c3;
+}
+
+.fill h3 {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 65px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2da1c3;
+  opacity: .75;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 /*Navbar Header*/
 
-/* Don't remove this!! We might require this later
-#logo-img{
-  background-image: url('../images/logo-img.jpeg') no-repeat ;
-  width: 150px ;
-  height: 150px ;
-}
-*/
 header {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 9;
 }
 
 .navbar-header > a > img {
@@ -67,6 +111,8 @@ header {
 /*******************Home page*****************/
 #home {
   background-image:url('../images/back-img-4.jpg');
+  position: relative;
+  z-index: 99;
   background-position: center;
   width: 100%;
   height: 664px;
@@ -110,6 +156,46 @@ header {
   text-align: justify;
 } 
 
+
+/*************Members page*****************/
+#member {
+  background-color: #FFF;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.member-list {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 4px 8px 8px #888888;
+  height: 300px;
+  margin: 0 auto 15px;
+}
+
+.member-list img{
+  display: block;
+}
+
+.member-list span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  background-color: #FFF;
+  color: #000;
+  opacity: .7;
+  height: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.member-list:hover .overlay {
+  height: 100%;
+}
 
 /*-----------------------------------Media tags placed below---------------------------------------*/
 @media (min-width: 767px){
